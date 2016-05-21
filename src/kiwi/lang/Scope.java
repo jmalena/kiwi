@@ -3,8 +3,8 @@ package kiwi.lang;
 import java.util.HashMap;
 
 public class Scope {
-    Scope parent;
-    HashMap<Symbol, Expression> expressions = new HashMap<>();
+    protected Scope parent;
+    protected HashMap<Symbol, Expression> expressions = new HashMap<>();
     
     public Scope() {
         this.parent = null;
