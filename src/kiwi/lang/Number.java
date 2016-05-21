@@ -29,7 +29,7 @@ public class Number implements Expression {
     }
 
     @Override
-    public Expression evaluate(Scope scope) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public Expression evaluate(Scope scope) throws RuntimeException {
+        return this;
     }
 }

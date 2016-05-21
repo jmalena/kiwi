@@ -31,7 +31,13 @@ public class Symbol implements Expression {
     }
 
     @Override
-    public Expression evaluate(Scope scope) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public Expression evaluate(Scope scope) throws RuntimeException {
+        Expression expression = scope.get(this);
+        
+        if(expression == null) {
+            throw new RuntimeException("Unable to resolve symbol \"" + getValue() + "\" in this context");
+        }
+        
+        return expression;
     }
 }
