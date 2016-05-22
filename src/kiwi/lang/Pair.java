@@ -12,6 +12,19 @@ public class Pair<E extends Expression> implements List<E> {
     }
 
     @Override
+    public String toString() {
+        String tailString = "";
+        
+        if(!(getTail() instanceof Nil)) {
+            tailString = getTail().toString();
+            tailString = tailString.substring(1, tailString.length() - 1);
+            tailString = " " + tailString;
+        }
+        
+        return "(" + getHead() + tailString + ")";
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if(!(obj instanceof Pair)) {
             return false;

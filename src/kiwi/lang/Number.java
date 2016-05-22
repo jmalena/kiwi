@@ -10,6 +10,15 @@ public class Number implements Expression {
     public double getValue() {
         return value;
     }
+
+    @Override
+    public String toString() {
+        if(getValue() % 1 == 0) {
+            return String.valueOf((int)getValue());
+        }
+        
+        return String.valueOf(getValue());
+    }
     
     @Override
     public boolean equals(Object obj) {

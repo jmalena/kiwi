@@ -14,6 +14,11 @@ public class Nil implements List {
     }
 
     @Override
+    public String toString() {
+        return "nil";
+    }
+
+    @Override
     public Expression getHead() {
         return this;
     }

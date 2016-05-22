@@ -14,6 +14,11 @@ public class Symbol implements Expression {
     }
 
     @Override
+    public String toString() {
+        return value;
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if(!(obj instanceof Symbol)) {
             return false;
