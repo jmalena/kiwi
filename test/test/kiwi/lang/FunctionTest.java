@@ -54,9 +54,9 @@ public class FunctionTest {
     public void testEvaluateRestArgument() throws RuntimeException {
         Rest callable = new Rest();
         Scope scope = new Scope();
-        scope.set(new Symbol("foo"), new Number(1));
+        scope.set(new Symbol("foo"), new Number(2));
         List<Expression> arguments = new Pair(new Number(1), new Pair(new Symbol("foo"), Nil.getInstance()));
         
-        assertEquals(new Pair(new Number(1), Nil.getInstance()), callable.call(scope, arguments));
+        assertEquals(new Pair(new Number(2), Nil.getInstance()), callable.call(scope, arguments));
     }
 }
