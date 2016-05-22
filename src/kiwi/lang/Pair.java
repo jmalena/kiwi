@@ -54,6 +54,7 @@ public class Pair<E extends Expression> implements List<E> {
 
     @Override
     public Expression evaluate(Scope scope) throws RuntimeException {
-        throw new UnsupportedOperationException("Not supported yet.");
+        Callable fn = (Callable)getHead().evaluate(scope);
+        return fn.call(scope, (List<Expression>)getTail());
     }
 }
