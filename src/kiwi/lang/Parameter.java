@@ -8,6 +8,10 @@ public class Parameter {
         this.name = name;
         this.rest = rest;
     }
+    
+    public Parameter(Symbol name) {
+        this(name, false);
+    }
 
     public Symbol getName() {
         return name;

@@ -14,7 +14,7 @@ public class CallableTest {
         @Override
         public ArrayList<Parameter> getParameters() {
             ArrayList<Parameter> parameters = new ArrayList<>();
-            parameters.add(new Parameter(new Symbol("a"), false));
+            parameters.add(new Parameter(new Symbol("a")));
             return parameters;
         }
 
@@ -29,7 +29,7 @@ public class CallableTest {
         @Override
         public ArrayList<Parameter> getParameters() {
             ArrayList<Parameter> parameters = new ArrayList<>();
-            parameters.add(new Parameter(new Symbol("a"), false));
+            parameters.add(new Parameter(new Symbol("a")));
             parameters.add(new Parameter(new Symbol("bs"), true));
             return parameters;
         }
@@ -46,7 +46,7 @@ public class CallableTest {
         public ArrayList<Parameter> getParameters() {
             ArrayList<Parameter> parameters = new ArrayList<>();
             parameters.add(new Parameter(new Symbol("as"), true));
-            parameters.add(new Parameter(new Symbol("b"), false));
+            parameters.add(new Parameter(new Symbol("b")));
             return parameters;
         }
 
