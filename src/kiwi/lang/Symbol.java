@@ -36,6 +36,8 @@ public class Symbol implements Expression {
         
         if(expression == null) {
             throw new RuntimeException("Unable to resolve symbol \"" + getValue() + "\" in this context");
+        } else if(expression instanceof Symbol) {
+            return expression.evaluate(scope);
         }
         
         return expression;
