@@ -1,12 +1,13 @@
 package kiwi.core;
 
 import java.util.ArrayList;
+import kiwi.lang.Function;
 import kiwi.lang.RuntimeException;
 import kiwi.lang.*;
 
-public class Function extends Callable {
+public class FunctionFactory extends Callable {
     
-    public class RuntimeFunction extends kiwi.lang.Function {
+    public class RuntimeFunction extends Function {
         protected ArrayList<Parameter> parameters = new ArrayList<>();
         protected Expression body;
 
