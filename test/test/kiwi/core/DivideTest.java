@@ -10,6 +10,16 @@ import kiwi.lang.*;
 public class DivideTest {
     
     @Test
+    public void testDivideEmpty() {
+        try {
+            new Divide().call(new Scope(), Nil.getInstance());
+            fail();
+        } catch(RuntimeException e) {
+            assertEquals("Passed too few arguments to callable", e.getMessage());
+        }
+    }
+    
+    @Test
     public void testDivideSingle() throws RuntimeException {
         List<Expression> arguments = new Pair(new Number(2), Nil.getInstance());
         assertEquals(new Number(1.0 / 2), new Divide().call(new Scope(), arguments));

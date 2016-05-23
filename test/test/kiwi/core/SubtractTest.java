@@ -10,6 +10,16 @@ import kiwi.lang.*;
 public class SubtractTest {
     
     @Test
+    public void testSubtractEmpty() {
+        try {
+            new Subtract().call(new Scope(), Nil.getInstance());
+            fail();
+        } catch(RuntimeException e) {
+            assertEquals("Passed too few arguments to callable", e.getMessage());
+        }
+    }
+    
+    @Test
     public void testSubtractSingle() throws RuntimeException {
         List<Expression> arguments = new Pair(new Number(1), Nil.getInstance());
         assertEquals(new Number(-1), new Subtract().call(new Scope(), arguments));
