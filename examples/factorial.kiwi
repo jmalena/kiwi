@@ -1,0 +1,7 @@
+(set! factorial
+ (fun (a)
+  (if (< a 2)
+   1
+   (* a (factorial (- a 1))))))
+
+(println (factorial 5))
