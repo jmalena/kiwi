@@ -129,4 +129,5 @@ nil
 - `(map [fun] [list])`: Aplikuje funkci `[fun]` na každý prvek seznamu `[list]`.
 - `(filter [fun] [list])`: Zavolá funkci `[fun]` na každý prvek seznamu `[list]`. Pokud je výsledek funknce `[fun]` pravdivá hodnota, zahrne prvek do výsledného seznamu.
 - `(range [start] [end])`: Vytvoří seznam, obsahující čísla v rozsahu `[start]` až `[end]`.
+- `(time)`: Počet uplynulých sekund od aprílu léta Páně 2016.
 - `(println [expr])`: Vypíše hodnotu výrazu `[expr]` na standardní výstup.

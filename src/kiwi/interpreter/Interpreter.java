@@ -52,6 +52,7 @@ public class Interpreter {
         scope.set(new Symbol("-"), new Subtract());
         scope.set(new Symbol("*"), new Multiply());
         scope.set(new Symbol("/"), new Divide());
+        scope.set(new Symbol("time"), new Time());
         scope.set(new Symbol("println"), new PrintLine());
         return scope;
     }
