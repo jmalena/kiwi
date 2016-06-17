@@ -16,7 +16,7 @@ public class FunctionFactory extends Callable {
                 String name = parameters.getHead().getValue();
 
                 Parameter parameter;
-                if(name.length() > 3 && name.startsWith("..")) {
+                if(name.length() > 2 && name.startsWith("..")) {
                     name = name.substring(2);
                     parameter = new Parameter(new Symbol(name), true);
                 } else {
