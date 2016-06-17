@@ -4,6 +4,18 @@ Kiwi je interpretovaný a dynamicky typovaný dialekt programovacího jazyka Lis
 
 ![](logo.jpg)
 
+## Použití
+
+```
+Usage:
+	java -jar dist/Kiwi.jar [path]
+	java -jar dist/Kiwi.jar [options]
+
+Options:
+	-v, --version  Print version
+	-h, --help     Print help
+```
+
 ## Datové typy
 
 ### number

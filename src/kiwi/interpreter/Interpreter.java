@@ -6,14 +6,12 @@ import kiwi.core.*;
 
 public class Interpreter {
     public static String VERSION = "1.0.0";
-    
+
     public static void main(String[] args) {
         if(args.length > 0) {
             String option = args[0];
 
-            if(option.equals("-s") || option.equals("--source")) {
-                // @TODO
-            } else if(option.equals("-v") || option.equals("--version")) {
+            if(option.equals("-v") || option.equals("--version")) {
                 System.out.println(VERSION);
             } else if(option.equals("-h") || option.equals("--help")) {
                 printHelp();
@@ -24,11 +22,11 @@ public class Interpreter {
             new Repl();
         }
     }
-    
+
     protected static void printHelp() {
-        System.out.println("Options:\n\t-v, --version\tPrint version\n\t-h, --help\tPrint help");
+        System.out.println("Usage:\n\tkiwi [path]\n\tkiwi [options]\n\nOptions:\n\t-v, --version\tPrint version\n\t-h, --help\tPrint help");
     }
-    
+
     public static Scope createDefaultScope() {
         Scope scope = new Scope();
         scope.set(new Symbol("nil"), Nil.getInstance());
