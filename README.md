@@ -28,7 +28,7 @@ java -jar dist/kiwi.jar path/to/file.kiwi
 To display available command-line options:
 
 ```bash
-java -jar dist/Kiwi.jar --help
+java -jar dist/kiwi.jar --help
 ```
 
 ## Documentation
@@ -39,12 +39,12 @@ java -jar dist/Kiwi.jar --help
 
 ## Building From Source
 
-To build Kiwi from source:
+To run tests and build Kiwi from source:
 
 ```bash
-mkdir -p dist
-javac -d dist $(find src -name "*.java")
-jar cfm dist/kiwi.jar manifest.mf -C dist .
+make test
+make build
+make clean
 ```
 
 ## Contributing
