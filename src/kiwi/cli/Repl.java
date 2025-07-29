@@ -10,7 +10,7 @@ public class Repl extends Interpreter {
     protected static String PROMPT = "> ";
 
     public Repl() {
-        System.out.println("Welcome to Kiwi REPL (" + Interpreter.VERSION + "):");
+        System.out.println("Welcome to Kiwi REPL (version " + Interpreter.VERSION + "):");
         
         Scanner scanner = new Scanner(System.in);
         Scope scope = Interpreter.createDefaultScope();

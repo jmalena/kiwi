@@ -4,7 +4,7 @@ import kiwi.lang.*;
 import kiwi.core.*;
 
 public abstract class Interpreter {
-    public static String VERSION = "1.0.0";
+    public static String VERSION = "0.1.0";
     
     protected static Scope createDefaultScope() {
         Scope scope = new Scope();
