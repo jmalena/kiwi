@@ -8,6 +8,12 @@
 
 ## Usage
 
+To start the Kiwi REPL (interactive prompt):
+
+```bash
+java -jar dist/kiwi.jar
+```
+
 To run a Kiwi program from a file:
 
 ```bash
