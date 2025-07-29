@@ -33,7 +33,7 @@ To build Kiwi from source:
 ```bash
 mkdir -p dist
 javac -d dist $(find src -name "*.java")
-jar cf dist/kiwi.jar -C dist .
+jar cfm dist/kiwi.jar manifest.mf -C dist .
 ```
 
 ## Contributing
