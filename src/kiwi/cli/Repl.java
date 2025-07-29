@@ -1,4 +1,4 @@
-package kiwi.interpreter;
+package kiwi.cli;
 
 import java.util.Scanner;
 import kiwi.lexer.*;
@@ -6,7 +6,7 @@ import kiwi.parser.*;
 import kiwi.lang.RuntimeException;
 import kiwi.lang.*;
 
-public class Repl {
+public class Repl extends Interpreter {
     protected static String PROMPT = "> ";
 
     public Repl() {

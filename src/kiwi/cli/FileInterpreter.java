@@ -1,4 +1,4 @@
-package kiwi.interpreter;
+package kiwi.cli;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -9,7 +9,7 @@ import kiwi.parser.*;
 import kiwi.lang.RuntimeException;
 import kiwi.lang.*;
 
-public class FileInterpreter {
+public class FileInterpreter extends Interpreter {
 
     public FileInterpreter(String path) {
         String input = "";

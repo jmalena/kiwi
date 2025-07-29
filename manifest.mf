@@ -1,3 +1,2 @@
 Manifest-Version: 1.0
-Main-Class: kiwi.interpreter.Interpreter
-
+Main-Class: kiwi.cli.Console
