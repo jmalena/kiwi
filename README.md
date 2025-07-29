@@ -1,10 +1,15 @@
-# Kiwi
+<summary>
+  <h2>Kiwi</h2>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/33269229-6fc0-4159-bb1a-3362ee444acb">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/2057a977-2f40-455d-8471-08e25246409a">
+    <img align="left" height="100" alt="Logo" src="https://github.com/user-attachments/assets/2057a977-2f40-455d-8471-08e25246409a">
+  </picture>
+  <br />
+  Kiwi is a simple, Lisp-like language and interpreter created for educational purposes.
+</summary>
 
-**Kiwi** is a simple, Lisp-like language and interpreter created for educational purposes.
-
-![Kiwi Logo](logo.jpg)
-
----
+<br />
 
 ## Usage
 
