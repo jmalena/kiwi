@@ -33,9 +33,7 @@ java -jar dist/kiwi.jar --help
 
 ## Documentation
 
-- 📘 [Documentation (English)](docs/en/index.md)
-- 📙 [Dokumentace (Česky)](docs/cs/index.md)
-
+- [Documentation (English)](docs/en/index.md)
 
 ## Building From Source
 
