@@ -16,19 +16,19 @@
 To start the Kiwi REPL (interactive prompt):
 
 ```bash
-java -jar dist/kiwi.jar
+java -jar dist/kiwi-0.1.0.jar
 ```
 
 To run a Kiwi program from a file:
 
 ```bash
-java -jar dist/kiwi.jar path/to/file.kiwi
+java -jar dist/kiwi-0.1.0.jar path/to/file.kiwi
 ```
 
 To display available command-line options:
 
 ```bash
-java -jar dist/kiwi.jar --help
+java -jar dist/kiwi-0.1.0.jar --help
 ```
 
 ## Documentation
@@ -49,7 +49,7 @@ Then build Kiwi interpreter using:
 make build
 ```
 
-This produces the Kiwi interpreter executable, located at `dist/kiwi.jar`.
+This produces the Kiwi interpreter executable, located at `dist/kiwi-0.1.0.jar`.
 
 ## Contributing
 

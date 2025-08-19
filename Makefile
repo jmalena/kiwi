@@ -4,13 +4,15 @@ JAR=jar
 
 SRC_DIR=src
 TEST_SRC_DIR=test
-BUILD_DIR=build
-TEST_BUILD_DIR=build/test-classes
+DIST_DIR=dist
+TEST_BUILD_DIR=$(DIST_DIR)/test-classes
 LIB_DIR=lib
-MANIFEST=manifest.mf
-MAIN_JAR=$(BUILD_DIR)/kiwi.jar
 
-CLASSPATH=$(LIB_DIR)/*:$(BUILD_DIR):$(TEST_BUILD_DIR)
+MANIFEST=manifest.mf
+VERSION=0.1.0
+MAIN_JAR=$(DIST_DIR)/kiwi-$(VERSION).jar
+
+CLASSPATH=$(LIB_DIR)/*:$(DIST_DIR):$(TEST_BUILD_DIR)
 
 .PHONY: all build test clean
 
@@ -18,10 +20,10 @@ all: build
 
 build:
 	@echo "Compiling source files..."
-	mkdir -p $(BUILD_DIR)
-	$(JAVAC) -d $(BUILD_DIR) $(shell find $(SRC_DIR) -name "*.java")
+	mkdir -p $(DIST_DIR)
+	$(JAVAC) -d $(DIST_DIR) $(shell find $(SRC_DIR) -name "*.java")
 	@echo "Building JAR..."
-	$(JAR) cfm $(MAIN_JAR) $(MANIFEST) -C $(BUILD_DIR) .
+	$(JAR) cfm $(MAIN_JAR) $(MANIFEST) -C $(DIST_DIR) .
 
 test: build
 	@echo "Compiling test files..."
@@ -36,4 +38,4 @@ test: build
 
 clean:
 	@echo "Cleaning build artifacts..."
-	rm -rf $(BUILD_DIR) $(TEST_BUILD_DIR)
+	rm -rf $(DIST_DIR) $(TEST_BUILD_DIR)
