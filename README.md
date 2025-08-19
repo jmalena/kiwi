@@ -37,19 +37,24 @@ java -jar dist/kiwi.jar --help
 
 ## Building From Source
 
-To run tests and build Kiwi from source:
+Run tests to verify that the interpreter will work correctly on your system.
 
 ```bash
 make test
-make build
-make clean
 ```
+
+Then build Kiwi interpreter using:
+
+```bash
+make build
+```
+
+This produces the Kiwi interpreter executable, located at `dist/kiwi.jar`.
 
 ## Contributing
 
 Contributions, ideas, and bug reports are welcome! Feel free to open issues or submit pull requests.
 
-
 ## License
 
-Kiwi is licensed under the MIT License.
+Kiwi language and interpreter are licensed under the MIT License.
